@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ứng dụng tính điểm trung bình bằng jQuery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="brand"><span>Class </span> MarkSheet</h1>
+        <div class="wrapper">
+            <div class="inputInfo">
+                <div class="item">
+                    <label>Họ Tên</label>
+                    <input type="text" id="name" value="">
+                </div>
+                <div class="item">
+                    <label>Điểm Toán</label>
+                    <input type="number"  id="math" value="">
+                </div>
+                <div class="item">
+                    <label>Điểm Lý</label>
+                    <input type="number" id="physical" value="">
+                </div>
+                <div class="item">
+                    <label>Điểm Hóa</label>
+                    <input type="number" id="chemistry" value="">
+                </div>
+                
+                <input id="btnInput" value="Nhập" type="submit">
+                <input id="btnUpdate" class="hide" value="Cập nhật" type="submit">
+            </div>
+            <div class="list">
+                <table id="myTable" border="1">
+                    <tr>
+                        <th style="width: 5%;">STT</th>
+                        <th style="width: 30%;">Họ tên</th>
+                        <th style="width: 12%;">Điểm Toán</th>
+                        <th style="width: 12%;">Điểm Lý</th>
+                        <th style="width: 12%;">Điểm Hóa</th>
+                        <th style="width: 14%;">Điểm trung bình</th>
+                        <th style="width: 15%;">Cập nhật</th>
+                    </tr>
+                </table>
+            </div>
+            <div></div>
+            <div style="text-align: center;">
+                <input class="btnRun" id="diemTB" type="submit" value="Tính điểm trung bình">
+                <input class="btnRun" id="hsGioi" type="submit" value="Xác định học sinh giỏi">
+            </div>
+        </div>
+    </div>
+    <script src="./myjQuery.js"></script>
+</body>
+
+</html>

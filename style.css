@@ -1,0 +1,139 @@
+#myTable {
+    width: 100%;
+    padding: 1;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.container {
+    max-width: 1800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1em;
+}
+
+body {
+    background: #92bde7;
+    color: #485e74;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+}
+
+.wrapper {
+    box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+
+.wrapper>* {
+    padding: 1em;
+}
+
+.inputInfo {
+    background: #c9e6ff;
+}
+
+#btnInput,
+#btnUpdate {
+    margin-left: 50%;
+    transform: translateX(-50%);
+    width: 40%;
+    background-color: rgb(216, 50, 50);
+    font-weight: bold;
+    color: white;
+    padding: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#btnInput:hover {
+    background-color: rgba(216, 50, 50, 0.795);
+}
+
+.inputInfo input {
+    width: 60%;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.brand {
+    text-align: center;
+}
+
+.brand span {
+    color: #fff;
+}
+
+.list {
+    background: #f9feff;
+}
+
+.btnRun {
+    cursor: pointer;
+    width: 80%;
+    background-color: rgba(223, 202, 145, 0.644);
+    font-weight: bold;
+    font-size: 16px;
+    color: blue;
+    padding: 10px;
+    margin: 10px 16px;
+    border-radius: 10px;
+}
+
+.btnRun:hover {
+    background-color: rgba(216, 185, 100, 0.925);
+    color: #1c4772;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+#btnDel {
+    color: red;
+    margin-bottom: 3px;
+    padding: 0 15px 0 15px;
+}
+
+#btnEdit {
+    color: blue;
+    margin-bottom: 3px;
+    padding: 0 15px 0 15px;
+}
+
+
+@media (min-width: 900px) {
+    .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 5fr;
+    }
+
+    .wrapper>* {
+        padding: 2em;
+    }
+
+    .brand {
+        text-align: center;
+    }
+
+    .btnRun {
+        cursor: pointer;
+        width: 35%;
+        background-color: rgba(216, 185, 100, 0.644);
+        font-weight: bold;
+        color: blue;
+        padding: 5px;
+        margin: 0 16px;
+        border-radius: 10px;
+    }
+    
+}
